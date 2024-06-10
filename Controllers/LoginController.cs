@@ -13,5 +13,14 @@ namespace AspNetHorizon.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Index(FormCollection frm)
+        {
+            string email = frm["email"].ToString();
+            string password = frm["password"].ToString();
+
+            return View();
+        }
     }
 }
